@@ -73,16 +73,28 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Nom De Client</th>
-                            <th>Code Postale</th>
+                        <tr>
+                            <th>Nom et Prénom</th>
+                            <th>Rôle</th>
+                            <th>Mot de Passe</th>
+                            <th>Email</th>
+                            <th>Âge</th>
                             <th>Adresse</th>
+                            <th>Téléphone</th>
+                            <th>Code Postale</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let client of clients">
-                            <td>{{client.nom_de_client}}</td>
-                            <td>{{client.code_postale}}</td>
-                            <td>{{client.adresse}}</td>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
                             <td class="actions">
                                 <button class="action-btn edit">
                                     <i class="fas fa-pencil-alt"></i>
@@ -98,21 +110,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="pagination-container">
-                <div class="pagination-info">
-                    Showing data 1 to 8 of 200K clients
-                </div>
-                <div class="pagination-controls">
-                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <button class="page-btn">4</button>
-                    <span class="ellipsis">...</span>
-                    <button class="page-btn">40</button>
-                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
+
         </div>
     </main>
 </div>
