@@ -1,0 +1,57 @@
+<div class="settings-container">
+    <div class="user-info">
+        <h3>Informations du compte</h3>
+
+        <div class="form-group">
+            <label for="firstName">Prénom :</label>
+            <input type="text" id="firstName" required placeholder="Entrez votre prénom">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Nom :</label>
+            <input type="text" id="lastName" required placeholder="Entrez votre nom">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" required placeholder="Entrez votre email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="telUser" class="form-control"
+                placeholder="Entrez votre numéro de téléphone">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Âge :</label>
+            <input type="number" id="age" placeholder="Entrez votre âge">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <div style="position: relative;">
+                <input [type]="showPassword ? 'text' : 'password'" id="password" required
+                    placeholder="Entrez votre mot de passe">
+                <button type="button" (click)="showPassword = !showPassword"
+                    style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none;">
+                    👁️
+                </button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Adresse :</label>
+            <textarea id="address" placeholder="Entrez votre adresse" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Rôle :</label>
+            <input type="text" id="role" placeholder="Entrez votre rôle">
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="save-btn">Enregistrer les modifications</button>
+    </div>
+</div>
