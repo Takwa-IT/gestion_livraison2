@@ -3,17 +3,23 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface Client {
-  id: number;
-  client_name: string;
+  id_user?: number;
+  nomPrenom: string;
+  age: number;
+  tlf: string;
+  email: string;
+  role: 'livreur' | 'commercant' | 'client';
+  motdepasse: string;
   adresse: string;
   code_postale: string;
+  zip: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClientsService {
-  // apiUrl: any;
+  // private apiUrl = 'http://localhost:8080/api/clients'; // adapte l'URL selon ton backend
 
   // constructor(private http: HttpClient) { }
 
