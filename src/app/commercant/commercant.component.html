@@ -1,0 +1,108 @@
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="user.jpg" alt="Profile" class="profile-img">
+            <h3 class="admin">Administrateur</h3>
+        </div>
+
+        <nav class="nav-menu">
+            <div class="nav-item-container">
+                <a class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Utilisateurs</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a routerLink="/clients" class="dropdown-item">
+                        <i class="fas fa-user-friends"></i>
+                        Clients
+                    </a>
+                    <a routerLink="/commercants" class="dropdown-item">
+                        <i class="fas fa-store"></i>
+                        Commerçants
+                    </a>
+                    <a routerLink="/livreurs" class="dropdown-item">
+                        <i class="fas fa-truck"></i>
+                        Livreurs
+                    </a>
+                </div>
+
+                <a routerLink="/qrcode" class="nav-item">
+                    <i class="fas fa-qrcode"></i>
+                    QR Code
+                </a>
+                <a routerLink="/commandes" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    Commandes
+                </a>
+                <a routerLink="/dash" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    Statistiques
+                </a>
+                <a routerLink="/settingsowner" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    Paramètres
+                </a>
+
+
+                <div class="logout">
+                    <a routerLink="/login" class="nav-item">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Déconnexion
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="clients-container">
+            <div class="header">
+                <h1>Liste De Commerçants</h1>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Recherche Commerçant..." />
+                        <button>Rechercher</button>
+                    </div>
+                    <button class="add-button">
+                        <i class="fas fa-plus"></i>
+                        Ajouter Nouveau Commerçant
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom et Prenom </th>
+                            <th>Role</th>
+                            <th>Mot De Passe </th>
+                            <th>Email</th>
+                            <th>Adresse</th>
+                            <th>Age</th>
+                            <th>Telephone</th>
+                            <th>Code Postale</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td class="actions">
+                                <button class="action-btn delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
